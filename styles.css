@@ -38,7 +38,7 @@ html, body{
     box-sizing: border-box;
 }
 
-.btnSubmit{
+button{
     width: 200px;
     background-color: #4caf50;
     color: #fff;

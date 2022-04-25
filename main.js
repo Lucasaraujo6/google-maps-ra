@@ -28,6 +28,12 @@ function initMap(){
     }
     initAutoComplete();
     const btnSubmit = document.getElementById("btnSubmit");
+    const btnClear = document.getElementById("btnClear");
+
+    btnClear.onclick = () => {
+        markers = [];
+    }
+
 
     btnSubmit.onclick = (event) => {
         event.preventDefault();
