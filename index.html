@@ -10,7 +10,25 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>asds</h1>
+    <h1 class="page-header">Google Maps - R.A</h1>
+    <div class="container">
+        <form id="form" class="address-form">
+            <input type="text"
+                id="origin"
+                class="input"
+                name="origin"
+                placeholder="Escolha um endereço de origem:">
+            <input type="text"
+                id="destination"
+                class="input"
+                name="destination"
+                placeholder="Escolha um endereço de destino:">
+                
+                <button class="btnSubmit" id="btnSubmit">Traçar Rotas</button>
+        </form>
+        <div id="map"></div>
+    </div>
+
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script

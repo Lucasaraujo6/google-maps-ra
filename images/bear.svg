@@ -1,0 +1,70 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 210 210">
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0"/>
+      <stop offset="1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="-156.598" y1="-100.423" x2="-142.398" y2="-100.423" gradientTransform="matrix(-1.9850785,-1.9491885,-1.9491885,1.9850785,-635.71053,24.309792)">
+      <stop offset="0" stop-color="#c17d11"/>
+      <stop offset=".274" stop-color="#bd7a10"/>
+      <stop offset=".569" stop-color="#b0700c"/>
+      <stop offset=".875" stop-color="#9a6105"/>
+      <stop offset="1" stop-color="#8f5902"/>
+    </linearGradient>
+    <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="-57.963" y1="-3.565" x2="-43.763" y2="-3.565" gradientTransform="matrix(1.9850785,-1.9491885,1.9491885,1.9850785,-111.68288,24.309792)">
+      <stop offset="0" stop-color="#c17d11"/>
+      <stop offset=".274" stop-color="#bd7a10"/>
+      <stop offset=".569" stop-color="#b0700c"/>
+      <stop offset=".875" stop-color="#9a6105"/>
+      <stop offset="1" stop-color="#8f5902"/>
+    </linearGradient>
+    <radialGradient id="d" cx="156.211" cy="-74.411" r="17.324" gradientTransform="matrix(-2.1923503,-1.0656179e-7,8.5863721e-8,-1.7665185,140.28275,-3.3913285)" gradientUnits="userSpaceOnUse" fx="156.211" fy="-74.411">
+      <stop offset="0" stop-color="#e9b15e"/>
+      <stop offset="1" stop-color="#966416"/>
+    </radialGradient>
+    <filter x="-.119" width="1.238" y="-1.307" height="3.614" id="e">
+      <feGaussianBlur stdDeviation="1.633"/>
+    </filter>
+  </defs>
+  <text style="line-height:0%" x="-555.756" y="1882.702" font-size="33.386" stroke-width="2.782">
+    <tspan font-size="16.693" y="1882.702" x="-555.756" font-family="Bryant-Regular" fill="#fff"/>
+
+  </text>
+  <text style="line-height:0%" x="-570.001" y="1902.731" font-size="33.386" stroke-width="2.782">
+    <tspan font-size="16.693" y="1902.731" x="-570.001" font-family="Bryant-Regular" fill="#fff"/>
+
+  </text>
+  <text style="line-height:0%" x="-684.7" y="1806.325" font-size="33.386" stroke-width="2.782">
+    <tspan font-size="16.693" y="1806.325" x="-684.7" font-family="Bryant-Regular" fill="#fff"/>
+
+  </text>
+  <text style="line-height:0%" x="-698.945" y="1826.354" font-size="33.386" stroke-width="2.782">
+    <tspan font-size="16.693" y="1826.354" x="-698.945" font-family="Bryant-Regular" fill="#fff"/>
+
+  </text>
+  <text style="line-height:0%" x="-12453.104" y="22135.223" font-size="370.093" stroke-width="30.841">
+    <tspan font-size="185.046" y="22135.223" x="-12453.104" font-family="Bryant-Regular" fill="#fff"/>
+
+  </text>
+  <text style="line-height:0%" x="-12611.015" y="22357.254" font-size="370.093" stroke-width="30.841">
+    <tspan font-size="185.046" y="22357.254" x="-12611.015" font-family="Bryant-Regular" fill="#fff"/>
+
+  </text>
+  <g transform="matrix(1.5732697,0,0,1.5732697,392.76044,-124.28448)">
+    <path d="M-157.29 102.535c-6.165 6.285-4.86 17.577 2.916 25.217 7.784 7.651 19.094 8.747 25.27 2.463 6.174-6.285 4.87-17.573-2.918-25.218-7.78-7.645-19.091-8.747-25.268-2.462z" fill="url(#b)" stroke="#6f4709" stroke-width="5.453"/>
+    <path d="M-168.8 120.633c-.098 9.468 8.039 17.306 18.172 17.503 10.15.196 18.448-7.327 18.557-16.805.105-9.474-8.03-17.308-18.175-17.499-10.14-.197-18.444 7.323-18.553 16.801z" opacity=".6" fill="#e9b96e"/>
+    <path d="M-205.513 102.535c6.165 6.285 4.86 17.577-2.913 25.217-7.787 7.651-19.094 8.747-25.273 2.463-6.174-6.285-4.87-17.573 2.918-25.218 7.779-7.645 19.089-8.747 25.268-2.462z" fill="url(#c)" stroke="#6f4709" stroke-width="5.453"/>
+    <path d="M-193.84 120.633c.099 9.468-8.039 17.306-18.172 17.503-10.149.196-18.447-7.327-18.556-16.805-.105-9.474 8.029-17.308 18.175-17.499 10.14-.197 18.444 7.323 18.553 16.801z" opacity=".6" fill="#e9b96e"/>
+    <path d="M-135.525 145.464c.011-26.083-21.12-47.25-47.213-47.256-26.086-.01-47.242 21.123-47.256 47.211v.045c-.013 26.094 21.117 35.339 47.211 35.355 26.088.014 47.247-9.22 47.258-35.303v-.052z" fill="url(#d)" stroke="#6f4709" stroke-width="5.453" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-141.329 145.464c.012-22.878-18.532-41.435-41.41-41.446-22.88-.017-41.437 18.529-41.451 41.401v.045c-.011 22.886 18.532 28.904 41.407 28.915 22.88.014 41.443-5.982 41.454-28.874v-.041z" opacity=".127" fill="none" stroke="#fff" stroke-width="6.217" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-157.616 155.448c.006 14.09-11.22 25.524-25.084 25.527-13.859.006-25.099-11.41-25.106-25.503v-.024c-.008-14.096 11.22-19.09 25.083-19.1 13.86-.007 25.101 4.982 25.107 19.071v.029z" fill="#e9b96e" stroke="#6f4709" stroke-width="5.453" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse style="marker:none" cx="-182.711" cy="148.924" rx="13.911" ry="6.955" color="#000" fill-rule="evenodd" />
+    <path d="M-168.8 166.293c0 5.484-6.231 9.921-13.914 9.921-7.682 0-13.908-4.44-13.908-9.92 0-5.473 6.226 1.652 13.908 1.652 7.683 0 13.914-7.125 13.914-1.653z" fill="#555753"/>
+    <ellipse transform="rotate(-14.791356)" style="marker:none" cx="-228.846" cy="74.401" rx="8.347" ry="6.955" color="#000" fill-rule="evenodd" />
+    <ellipse style="marker:none" transform="matrix(-0.96686192,-0.25529989,-0.25529983,0.96686193,0,0)" cx="124.625" cy="167.735" rx="8.347" ry="6.955" color="#000" fill-rule="evenodd" />
+    <ellipse style="marker:none" transform="rotate(-14.791354)" cx="-231.083" cy="72.616" rx="2.893" ry="2.411" color="#000" opacity=".7" fill="#eeeeec" fill-rule="evenodd" />
+    <ellipse transform="matrix(-0.96686192,-0.25529986,-0.25529986,0.96686192,0,0)" style="marker:none" cx="127.451" cy="167.286" rx="2.893" ry="2.411" color="#000" opacity=".7" fill="#eeeeec" fill-rule="evenodd" />
+    <rect style="marker:none" width="5.564" height="11.129" x="-185.493" y="156.69" ry=".179" rx=".179" color="#000" opacity=".508" fill="#8f5902" fill-rule="evenodd" />
+    <ellipse style="marker:none" transform="matrix(3.0350949,0,0,3.7095603,-254.03556,56.531484)" cx="23.5" cy="34.5" rx="16.5" ry="1.5" color="#000" opacity=".35" fill-rule="evenodd" filter="url(#e)" />
+  </g>
+</svg>
