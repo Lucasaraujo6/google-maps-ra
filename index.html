@@ -6,32 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Maps - R.A.</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="./main.js"></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <h1 class="page-header">Google Maps - R.A</h1>
     <div class="container">
         <form id="form" class="address-form">
+            <input type="checkbox" id="checkOrigin"> 
             <input type="text"
-                id="origin"
-                class="input"
-                name="origin"
-                placeholder="Escolha um endereço de origem:">
+            id="origin"
+            class="input"
+            name="origin"
+            placeholder="Escolha um endereço de origem:">
+            <input type="checkbox" id="checkDestination"> 
             <input type="text"
-                id="destination"
-                class="input"
-                name="destination"
-                placeholder="Escolha um endereço de destino:">
-                
-                <button class="btnSubmit" id="btnSubmit">Traçar Rotas</button>
-                <button class="btnClear" id="btnClear">Limpar Mapa</button>
+            id="destination"
+            class="input"
+            name="destination"
+            placeholder="Escolha um endereço de destino:">
+            
+            <select id="travelMode" name="TravelMode">
+                <option value="BICYCLING">Bicycling</option>
+                <option value="DRIVING" >Driving</option>
+                <!-- <option value="TRANSIT">Transit</option> -->
+                <option value="WALKING" selected>Walking</option>
+            </select>
+            <button class="btnSubmit" id="btnSubmit">Traçar Rotas</button>
+            <button class="btnClear" id="btnClear">Limpar Mapa</button>
         </form>
         <div id="map"></div>
     </div>
-
-
+    
+    
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="./main.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsVYbXTR0-3uuTQZBIb60wUDuvZXxXTOI&callback=initMap&v=weekly&libraries=places,drawing"
       async

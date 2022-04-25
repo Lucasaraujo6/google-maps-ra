@@ -47,3 +47,6 @@ button{
     border-radius: 4px;
     cursor: pointer;
 }
+#checkOrigin, #checkDestination{
+    margin: auto 0px;
+}

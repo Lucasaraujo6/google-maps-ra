@@ -2,6 +2,12 @@ let map;
 let markers = [];
 let currentPosition;
 let currentMarker;
+const inputDestination = document.getElementById("destination");
+const inputOrigin = document.getElementById("origin");
+
+
+const checkDestination = document.getElementById("checkDestination");
+const checkOrigin = document.getElementById("checkOrigin");
 
 function initMap(){
     const mapElement = document.getElementById("map");
@@ -26,42 +32,47 @@ function initMap(){
             });
         });
     }
+
     initAutoComplete();
     const btnSubmit = document.getElementById("btnSubmit");
     const btnClear = document.getElementById("btnClear");
 
-    btnClear.onclick = () => {
-        markers = [];
-    }
-
-
-    btnSubmit.onclick = (event) => {
-        event.preventDefault();
+    btnSubmit.addEventListener("click", renderRoute);
+    
+    function renderRoute(e) {
+        e.preventDefault();
         // console.log(event)
-
+        
         //pegar as instancias de limites dos markers
         const bounds = new google.maps.LatLngBounds();
         markers.forEach(marker => bounds.extend(marker.getPosition()));
         map.fitBounds(bounds);
-
+        
         //DirectionsServices
         const directionsService = new google.maps.DirectionsService();
         const directionsDisplay = new google.maps.DirectionsRenderer();
-
+        
         //Setar mapa com direções renderizadas, associa o display ao mapa
         directionsDisplay.setMap(map);
-
+        
         const origin = markers[0].getPosition();
         const destination = markers[1].getPosition();
-
+        
+        
+        const travelMode = document.getElementById("travelMode");
         const request = {
             //origin = origin,
             origin,
             // destination=destination,
             destination,
-            travelMode:"WALKING",
+            travelMode: travelMode.value,
         }
-
+        
+        travelMode.onchange = ()=>{
+            directionsDisplay.setMap(null);
+            renderRoute(e);
+            
+        }
         directionsService.route(request,(result, status) => {
             if(status == "OK"){
                 directionsDisplay.setDirections(result);
@@ -69,8 +80,16 @@ function initMap(){
                 window.alert("Wrong Direction" + status);
             }
         })
-
+        btnClear.onclick = (e) => {
+            e.preventDefault();
+            console.log("aqui");
+            directionsDisplay.setMap(null);
+            destinationMarker=null;
+            markers.forEach(marker => marker.setMap(null));
+            markers=[];
+        }
     }
+    
 }
 
 //Criando autoComplete no Input
@@ -78,7 +97,7 @@ function initAutoComplete(){
     const options = {
         types: ["(cities)"],
     };
-    const inputOrigin = document.getElementById("origin");
+    // const inputOrigin = document.getElementById("origin");
     
     let autoCompleteOrigin = new google.maps.places.Autocomplete(inputOrigin, options);
 
@@ -99,9 +118,9 @@ function initAutoComplete(){
     });
 
 
+    // const inputDestination = document.getElementById("destination");
 
 
-    const inputDestination = document.getElementById("destination");
     let autoCompleteDestination = new google.maps.places.Autocomplete(inputDestination, options);
     autoCompleteDestination.addListener("place_changed", () =>{
         const place = autoCompleteDestination.getPlace();
@@ -119,4 +138,27 @@ function initAutoComplete(){
         map.setCenter(destination);
     });
 
-}
+    
+    
+}    
+
+checkDestination.addEventListener("change",()=>{
+    if(checkDestination.checked){
+        inputDestination.setAttribute("disabled", false );
+        markers[1]=currentMarker;
+
+    }else{
+
+        inputDestination.disabled=false;
+    }   
+    });
+
+checkOrigin.addEventListener("change",()=>{
+    if(checkOrigin.checked){
+        inputOrigin.setAttribute("disabled", false );
+        markers[0]=currentMarker;
+
+    }else{
+        inputOrigin.disabled=false;
+    }
+    });
